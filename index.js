@@ -15,7 +15,7 @@ module.exports = function(configuration) {
 
   // init configuration
   configuration = configuration || {}; // init default, need to work on 5.7
-  const xpayConfiguration = underscore.extend(configuration, XPAY_CONF);
+  const xpayConfiguration = underscore.extend(XPAY_CONF, configuration);
 
   // get the url
   return function getUrl(transactionCode, quantity, macCode) {
