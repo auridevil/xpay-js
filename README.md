@@ -53,6 +53,7 @@ Feel free to add any improvements and open a pull request.
 Info
 =================
 For more infos about xpay watch http://www.cartasi.it/gtwpages/common/?id=OiRGdkfJWU
+
 Made with love by Aureliano Bergese
 
-Cheers by digitalx.
+Cheers by digitalx. http://digitalx.it/
