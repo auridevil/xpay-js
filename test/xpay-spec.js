@@ -18,7 +18,9 @@ describe('xpay integration', function() {
       quantity: 1000 // 10 euro
     };
 
-    var res = xpay(args.transactionCode, args.quantity);
+    var mac;
+
+var res = xpay(args.transactionCode, args.quantity, mac);
     expect(res).toBeDefined();
     // TODO: think about more testing
     console.log(res);
