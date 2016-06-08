@@ -13,13 +13,14 @@ or clone:
 Init
 =================
 The module can be directly configured or globaly configured.
+
 Direct configuration:
 
-  var xpay = require('xpay-js')({
-    XPAY_KEY: '123456789012345678901',
-    XPAY_ALIAS: '7654321',
-    XPAY_RETURN_URL_OK: 'http:/myserver/okrul',
-    XPAY_RETURN_URL_KO: 'http:/myserver/korul',
+  	var xpay = require('xpay-js')({
+  	    XPAY_KEY: '123456789012345678901',
+    	XPAY_ALIAS: '7654321',
+    	XPAY_RETURN_URL_OK: 'http:/myserver/okrul',
+    	XPAY_RETURN_URL_KO: 'http:/myserver/korul',
   	});
 
 For the global configuration you must set the variables:
