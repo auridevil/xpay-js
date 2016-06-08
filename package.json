@@ -1,0 +1,31 @@
+{
+  "name": "xpay-js",
+  "version": "0.0.1",
+  "description": "Soft integration with X-pay payment system\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/jasmine-node/lib/jasmine-node/cli.js --verbose --captureExceptions test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/auridevil/xpay-js"
+  },
+  "keywords": [
+    "integration",
+    "xpay",
+    "nodejs"
+  ],
+  "author": "Aureliano Bergese",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "jasmine-node": "^1.14.5",
+    "node-inspector": "^0.12.8"
+  },
+  "engines": {
+    "node": "5.7"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
