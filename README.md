@@ -18,9 +18,9 @@ Direct configuration:
   var xpay = require('xpay-js')({
     XPAY_KEY: '123456789012345678901',
     XPAY_ALIAS: '7654321',
-    XPAY_RETURN_URL_OK: 'http://www.google.com',
-    XPAY_RETURN_URL_KO: 'http://www.bing.com',
-  });
+    XPAY_RETURN_URL_OK: 'http:/myserver/okrul',
+    XPAY_RETURN_URL_KO: 'http:/myserver/korul',
+  	});
 
 For the global configuration you must set the variables:
 
