@@ -18,13 +18,13 @@ module.exports = function(configuration) {
   const xpayConfiguration = underscore.extend(configuration, XPAY_CONF);
 
   // get the url
-  return function getUrl(transactionCode, quantity) {
+  return function getUrl(transactionCode, quantity, macCode) {
 
     // calculate the mac
     let shasum = crypto.createHash('sha1');
     let hashpayload = util.format('codTrans=%sdivisa=EURimporto=%s%s', transactionCode, quantity, xpayConfiguration.XPAY_KEY);
     shasum.update(hashpayload);
-    let macCode = shasum.digest('hex');
+    macCode = shasum.digest('hex');
 
     // create the link
     let xpayLink = util.format(
@@ -37,6 +37,7 @@ module.exports = function(configuration) {
       quantity,
       transactionCode
     );
+
     // done
     return xpayLink;
   };
