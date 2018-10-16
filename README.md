@@ -1,14 +1,14 @@
-xpay-js
+xpay-nexi-js
 =================
 Soft integration with Cartasì virtual POS X-pay (NEXI) payment system
 
 Installation
 =================
-	npm install xpay-js
+	npm install xpay-nexi-js
 
 or clone:
 
-	https://github.com/lBroth/xpay-js.git
+	https://github.com/lBroth/xpay-nexi-js.git
 
 Init
 =================
@@ -16,7 +16,7 @@ The module can be directly configured or globaly configured.
 
 Direct configuration:
 
-    var XPay = require('xpay-js');
+    var XPay = require('xpay-nexi-js');
     var xpay = new XPay();
     xpay.configure({
         XPAY_KEY: '123456789012345678901',
@@ -36,7 +36,7 @@ For the global configuration you must set the variables:
 
 and require simpler:
 	
-	var XPay = require('xpay-js');
+	var XPay = require('xpay-nexi-js');
 	
 
 Usage
