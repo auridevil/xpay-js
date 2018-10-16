@@ -41,7 +41,7 @@ class XPay {
 
         // calculate the mac
         let shasum = crypto.createHash('sha1');
-        let hashpayload = util.format('codTrans=%sdivisa=%simporto=%s%s', options.codTrans, options.divisa, options.importo, this._xpayConfiguration.XPAY_KEY);
+        let hashpayload = util.format('codTrans=%sdivisa=%simporto=%s%s', options.codTrans, options.divisa, options.amount, this._xpayConfiguration.XPAY_KEY);
         shasum.update(hashpayload);
         macCode = shasum.digest('hex');
 
