@@ -1,6 +1,6 @@
 xpay-js
 =================
-Soft integration with Cartasì virtual POS X-pay payment system
+Soft integration with Cartasì virtual POS X-pay (NEXI) payment system
 
 Installation
 =================
