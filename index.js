@@ -53,7 +53,7 @@ class XPay {
             this._xpayConfiguration.XPAY_RETURN_URL_KO,
             this._xpayConfiguration.XPAY_ALIAS,
             this._xpayConfiguration.XPAY_RETURN_URL_OK,
-            options.importo,
+            options.amount,
             options.codTrans
         );
 

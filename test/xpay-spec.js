@@ -10,7 +10,7 @@ describe('xpay get payment url', function() {
 
     xpay.configure({
         XPAY_KEY: 'XPAY_KEY',
-        XPAY_ALIAS: 'ALIAS_WEB_TEST',
+        XPAY_ALIAS: 'XPAY_ALIAS',
         XPAY_RETURN_URL_OK: 'http://www.google.com',
         XPAY_RETURN_URL_KO: 'http://www.bing.com',
         XPAY_SERVLET_URL: 'https://int-ecommerce.nexi.it/ecomm/ecomm/DispatcherServlet',
@@ -19,8 +19,9 @@ describe('xpay get payment url', function() {
 
     it('should get a url', function(done) {
         var args = {
-            codTrans: 'ABC123000001',
-            amount: 1000 // 10 euro
+            codTrans: 'ABC123',
+            amount: 1000, // 10 euro
+            divisa:'EUR'
         };
 
         var mac;
@@ -41,7 +42,7 @@ describe('xpay verify payment', function() {
 
     xpay.configure({
         XPAY_KEY: 'XPAY_KEY',
-        XPAY_ALIAS: 'ALIAS_WEB_TEST',
+        XPAY_ALIAS: 'XPAY_ALIAS',
 
     });
 
