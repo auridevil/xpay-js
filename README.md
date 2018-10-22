@@ -47,7 +47,8 @@ The init phase return a function, just invoke the function
 	var xpay = new XPay();
 	var args = {
         codTrans: 'ABC123000001',
-        amount: 1000 // 10 euro
+        amount: 1000, // 10 euro
+        divisa:'EUR'
     };
 	var xpayLink = xpay.getUrl(args, macCode);
 	
